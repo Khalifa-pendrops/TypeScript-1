@@ -5,52 +5,46 @@ const persons = [
         id: 111,
         name: "Khalifa",
         email: "khalifa@gmail.com",
-        password: "password",
         age: 27,
         occupation: "JavaScript Dev",
     },
     {
         type: "admin",
-        id: 211,
+        id: 112,
         name: "Ogechi",
         email: "ogechi@yahoo.com",
-        password: "password",
         age: 23,
-        role: "Front Desk Officer",
+        role: "CEO",
     },
     {
         type: "user",
-        id: 121,
+        id: 113,
         name: "Zayed",
         email: "zayed@hotmail.com",
-        password: "password",
         age: 43,
         occupation: "Python Dev",
     },
     {
         type: "admin",
-        id: 221,
+        id: 121,
         name: "Faith",
         email: "faith@gmail.com",
-        password: "password",
         age: 27,
         role: "Sales Representative",
     },
     {
         type: "user",
-        id: 123,
+        id: 122,
         name: "Hamed",
         email: "hamed@yahoo.com",
-        password: "password",
         age: 27,
-        occupation: "Typescript Dev",
+        occupation: "JavaScript Dev",
     },
     {
         type: "admin",
-        id: 223,
+        id: 123,
         name: "Kelvin",
         email: "kelvin@gmail.com",
-        password: "password",
         age: 30,
         role: "CEO",
     },
@@ -79,27 +73,15 @@ console.log();
 const adminsOfAge27 = filteredData(persons, "admin", { age: 27 });
 console.log("Admins of age 27:");
 adminsOfAge27.forEach(displayPerson);
-const userWithId123 = filteredData(persons, "user", { id: 123 });
-console.log("User with ID 123:");
-userWithId123.forEach(displayPerson);
 console.log();
-const adminWithId223 = filteredData(persons, "admin", { id: 223 });
-console.log("Admin with ID 223:");
-adminWithId223.forEach(displayPerson);
-const userWithEmailgmail = filteredData(persons, "user", { email: "@gmail" });
-console.log("User with email: ");
-userWithEmailgmail.forEach(displayPerson);
-console.log();
-const adminWithEmailgmail = filteredData(persons, "admin", { email: "@gmail" });
-console.log("Admin with email: ");
-adminWithEmailgmail.forEach(displayPerson);
-const userWithOccupationTypeScript = filteredData(persons, "user", {
-    occupation: "Typescript Dev",
+const userWithOccupationJavaScript = filteredData(persons, "user", {
+    occupation: "JavaScript Dev",
 });
-console.log("User with occupation: ");
-userWithOccupationTypeScript.forEach(displayPerson);
+console.log("Users with occupation: ");
+userWithOccupationJavaScript.forEach(displayPerson);
+console.log();
 const adminWithRoleSales = filteredData(persons, "admin", {
     role: "Sales Representative",
 });
-console.log("Admin with role: ");
+console.log("Admins with role: ");
 adminWithRoleSales.forEach(displayPerson);
