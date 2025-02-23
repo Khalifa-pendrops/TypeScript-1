@@ -37,7 +37,19 @@ When logged to the console, this should return a list of persons (Users[]) aged 
 
 ---
 
+## How to Use
 
+- fork the repository
+- navigate to the file directory **person.ts**
+- enter the command below to compile .ts to .js
+
+`tsc`
+
+- followed by the command below to run the code
+
+`node person.js`
+
+---
 
 
 
